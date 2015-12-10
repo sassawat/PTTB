@@ -1,0 +1,88 @@
+import plotly.plotly as py
+from plotly.graph_objs import *
+py.sign_in('waranchit20', '92m89kymu5')
+
+fig = {
+    'data': [
+        {
+            'labels': ['Bangkok', 'Central region', 'Northern region', 'Northeastern region', 'Southern region'],
+            'values': [3953830, 6210840, 3253719, 4972669, 2629265],
+            'type': 'pie',
+            'name': 'Personal Computer',
+            'marker': {'colors': ['rgb(252, 133, 133)',
+                                  'rgb(255, 51, 51)',
+                                  'rgb(246, 68, 68)',
+                                  'rgb(174, 5, 5)',
+                                  'rgb(246, 4, 4)']},
+            'domain': {'x': [0, .48],
+                       'y': [0, .49]},
+            'hoverinfo':'label+percent+name',
+            'textinfo':'none'
+        },
+        {
+            'labels': ['Bangkok', 'Central region', 'Northern region', 'Northeastern region', 'Southern region'],
+            'values': [1430828, 1962090, 1089476, 1621355, 943025],
+            'marker': {'colors': ['rgb(175, 10, 246)',
+                                  'rgb(128, 8, 179)',
+                                  'rgb(219, 160, 245)',
+                                  'rgb(204, 0, 204)',
+                                  'rgb(122, 57, 149)']},
+            'type': 'pie',
+            'name': 'Tablet',
+            'domain': {'x': [.52, 1],
+                       'y': [0, .49]},
+            'hoverinfo':'label+percent+name',
+            'textinfo':'none'
+
+        },
+        {
+            'labels': ['Bangkok', 'Central region', 'Northern region', 'Northeastern region', 'Southern region'],
+            'values': [2333190, 2864940, 1693061, 2306622, 1243685],
+            'marker': {'colors': ['rgb(0, 153, 0)',
+                                  'rgb(102, 204, 0)',
+                                  'rgb(178, 255, 153)',
+                                  'rgb(0, 255, 0)',
+                                  'rgb(153, 255, 51)']},
+            'type': 'pie',
+            'name': 'Notebook',
+            'domain': {'x': [0, .48],
+                       'y': [.51, 1]},
+            'hoverinfo':'label+percent+name',
+            'textinfo':'none'
+        },
+        {
+            'labels': ['Bangkok', 'Central region', 'Northern region', 'Northeastern region', 'Southern region'],
+            'values': [134509, 129386, 43207, 123531, 88993],
+            'marker': {'colors': ['rgb(153, 204, 255)',
+                                  'rgb(0, 128, 255)',
+                                  'rgb(102, 178, 255)',
+                                  'rgb(0, 102, 204)',
+                                  'rgb(51, 153, 255)']},
+            'type': 'pie',
+            'name':'PDA',
+            'domain': {'x': [.52, 1],
+                       'y': [.51, 1]},
+            'hoverinfo':'label+percent+name',
+            'textinfo':'none'
+        },
+        {
+            'labels': ['Bangkok', 'Central region', 'Northern region', 'Northeastern region', 'Southern region'],
+            'values': [347427, 5773082, 2369528, 2875198, 1949655],
+            'type': 'pie',
+            'name': 'SmartPhone',
+            'marker': {'colors': ['rgb(204, 102, 0)',
+                                  'rgb(255, 218, 30)',
+                                  'rgb(255, 128, 0)',
+                                  'rgb(255, 204, 153)',
+                                  'rgb(255, 178, 102)']},
+            'domain': {'x': [0, 100],
+                       'y': [0, .90]},
+            'hoverinfo':'label+percent+name',
+            'textinfo':'none'
+        }
+    ],
+    'layout': {'title': 'Graph of information technology users used information technology devices 2557',
+               'showlegend': False}
+}
+
+url = py.plot(fig, filename='Pie Chart Subplot Example')
