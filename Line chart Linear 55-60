@@ -1,0 +1,219 @@
+# Get this figure: fig = py.get_figure("https://plot.ly/~walkerke/30/")
+# Get this figure's data: data = py.get_figure("https://plot.ly/~walkerke/30/").get_data()
+# Add data to this figure: py.plot(Data([Scatter(x=[1, 2], y=[2, 3])]), filename ="GDP by country", fileopt="extend"))
+# Get y data of first trace: y1 = py.get_figure("https://plot.ly/~walkerke/30/").get_data()[0]["y"]
+
+# Get figure documentation: https://plot.ly/python/get-requests/
+# Add data documentation: https://plot.ly/python/file-options/
+
+# You can reproduce this figure in Python with the following code!
+
+# Learn about API authentication here: https://plot.ly/python/getting-started
+# Find your api_key here: https://plot.ly/settings/api
+
+import plotly.plotly as py
+from plotly.graph_objs import *
+py.sign_in('sasawat17', 'l6zvgkrnkl')
+from collections import OrderedDict
+trace1 = Scatter(
+    x=[2560, 2559, 2558, 2557, 2556, 2555],
+    y=[19277292, 19504120, 19012198, 21020323, 20215786, 20036481],
+    line=Line(
+        color='rgb(228,26,28)',
+        dash='solid',
+        width=2
+    ),
+    mode='lines',
+    name='PC',
+    uid='43db52'
+)
+trace2 = Scatter(
+    x=[2560, 2559, 2558, 2557, 2556, 2555],
+    y=[11909771, 11109928, 9508293, 9754192, 9253274, 7238228],
+    line=Line(
+        color='rgb(55,126,184)',
+        dash='solid',
+        width=2
+    ),
+    mode='lines',
+    name='Notebook',
+    uid='f5f229'
+)
+trace3 = Scatter(
+    x=[2560, 2559, 2558, 2557, 2556, 2555],
+    y=[13239194, 10779536, 7592914, 7046774, 3208358, 673534],
+    line=Line(
+        color='rgb(77,175,74)',
+        dash='solid',
+        width=2
+    ),
+    mode='lines',
+    name='Tablet',
+    uid='e13c59'
+)
+trace4 = Scatter(
+    x=[2560, 2559, 2558, 2557, 2556, 2555],
+    y=[1058050, 874861, 691673, 519626, 303017, 153253],
+    line=Line(
+        color='rgb(152,78,163)',
+        dash='solid',
+        width=2
+    ),
+    mode='lines',
+    name='PDA',
+    uid='a595e1'
+)
+trace5 = Scatter(
+    x=[2560, 2559, 2558, 2557, 2556, 2555],
+    y=[28640381, 27387804, 18784702, 16441710, 9358225, 5035493],
+    line=Line(
+        color='rgb(255,127,0)',
+        dash='solid',
+        width=2
+    ),
+    mode='lines',
+    name='Smart Phone',
+    uid='6bd578'
+)
+data = Data([trace1, trace2, trace3, trace4, trace5])
+layout = Layout(
+    autosize=True,
+    bargap=0.2,
+    bargroupgap=0,
+    barmode='group',
+    boxgap=0.3,
+    boxgroupgap=0.3,
+    boxmode='overlay',
+    dragmode='zoom',
+    font=Font(
+        color='#444',
+        family='Open Sans, sans-serif',
+        size=12
+    ),
+    height=754,
+    hidesources=False,
+    hovermode='closest',
+    legend=Legend(
+        x=0.016852871754523997,
+        y=0.9669260700389105,
+        bgcolor='#fff',
+        bordercolor='#444',
+        borderwidth=0,
+        font=Font(
+            color='',
+            family='',
+            size=0
+        ),
+        traceorder='normal',
+        xanchor='left',
+        yanchor='top'
+    ),
+    margin=Margin(
+        r=80,
+        t=100,
+        autoexpand=True,
+        b=80,
+        l=80,
+        pad=0
+    ),
+    paper_bgcolor=OrderedDict([('showticklabels', True), ('title', 'year'), ('gridcolor', 'rgb(255,255,255)'), ('linecolor', 'rgb(127,127,127)'), ('tickcolor', 'rgb(127,127,127)'), ('showline', True), ('type', 'linear')]),
+    plot_bgcolor='rgb(229,229,229)',
+    separators='.,',
+    showlegend=True,
+    smith=False,
+    title='Line chart 5 Number of information technology users used information technology devices by years',
+    titlefont=dict(
+        color='',
+        family='',
+        size=0
+    ),
+    width=1152,
+    xaxis=XAxis(
+        anchor='y',
+        autorange=True,
+        autotick=True,
+        domain=[0, 1],
+        dtick=5,
+        exponentformat='B',
+        gridcolor='rgb(255,255,255)',
+        gridwidth=1,
+        linecolor='rgb(127,127,127)',
+        linewidth=1,
+        mirror=False,
+        nticks=0,
+        overlaying=False,
+        position=0,
+        range=[1970, 2012],
+        rangemode='normal',
+        showexponent='all',
+        showgrid=True,
+        showline=True,
+        showticklabels=True,
+        tick0=0,
+        tickangle='auto',
+        tickcolor='rgb(127,127,127)',
+        tickfont=dict(
+            color='',
+            family='',
+            size=0
+        ),
+        ticklen=5,
+        ticks='',
+        tickwidth=1,
+        title='Year',
+        titlefont=dict(
+            color='',
+            family='',
+            size=0
+        ),
+        type='linear',
+        zeroline=True,
+        zerolinecolor='#444',
+        zerolinewidth=1
+    ),
+    yaxis=YAxis(
+        anchor='x',
+        autorange=True,
+        autotick=True,
+        domain=[0, 1],
+        dtick=2000000000000,
+        exponentformat='B',
+        gridcolor='rgb(255,255,255)',
+        gridwidth=1,
+        linecolor='rgb(127,127,127)',
+        linewidth=1,
+        mirror=False,
+        nticks=0,
+        overlaying=False,
+        position=0,
+        range=[-805910333333.3336, 17142416333333.334],
+        rangemode='normal',
+        showexponent='all',
+        showgrid=True,
+        showline=True,
+        showticklabels=True,
+        tick0=0,
+        tickangle='auto',
+        tickcolor='rgb(127,127,127)',
+        tickfont=dict(
+            color='',
+            family='',
+            size=0
+        ),
+        ticklen=5,
+        ticks='',
+        tickwidth=1,
+        title='Number of information technology users used information technology devices',
+        titlefont=dict(
+            color='',
+            family='',
+            size=0
+        ),
+        type='linear',
+        zeroline=True,
+        zerolinecolor='#444',
+        zerolinewidth=1
+    )
+)
+fig = Figure(data=data, layout=layout)
+plot_url = py.plot(fig)
