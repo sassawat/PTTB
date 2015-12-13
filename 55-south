@@ -1,0 +1,9 @@
+import plotly.plotly as py
+import plotly.graph_objs as go
+py.sign_in('phurinut58070112', '8jlz2too6o')
+
+fig = {'data': [{'labels': ['Personal computer', 'Notebook', 'Tablet', 'PDA', 'Smart Phone'],\
+                 'values': [2616677, 876603, 59883, 17376, 535362], 'type': 'pie'}], \
+       'layout': {'title': 'Southern region'}}
+
+url = py.plot(fig, filename='55 Southern region')
