@@ -1,0 +1,20 @@
+import plotly.plotly as py
+import plotly.graph_objs as go
+py.sign_in('phurinut58070112', '8jlz2too6o')
+
+trace1 = go.Bar(
+    x=['Personal computer', 'Notebook', 'Tablet', 'PDA', 'Smart phone'],
+    y=[20036482, 7238229, 673534, 153253, 5035493],
+    name='2555'
+)
+trace2 = go.Bar(
+    x=['Personal computer', 'Notebook', 'Tablet', 'PDA', 'Smart phone'],
+    y=[20215786, 9253274, 3208357, 303017, 9358224],
+    name='2556'
+)
+data = [trace1, trace2]
+layout = go.Layout(
+    barmode='group'
+)
+fig = go.Figure(data=data, layout=layout)
+plot_url = py.plot(fig, filename='grouped-bar')
