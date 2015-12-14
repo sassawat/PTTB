@@ -4,6 +4,6 @@ py.sign_in('sasawat17', 'l6zvgkrnkl')
 
 fig = {'data': [{'labels': ['Personal computer', 'Notebook', 'Tablet', 'PDA', 'Smart Phone'],\
                  'values': [119066200, 59460992, 42540310, 3600480, 105648315], 'type': 'pie'}], \
-       'layout': {'title': 'Bangkok'}}
+       'layout': {'title': 'A sum of technology equipment in the year 2555-2560'}}
 
 url = py.plot(fig, filename='Total 2555-2560')
