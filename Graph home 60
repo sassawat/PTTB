@@ -1,0 +1,12 @@
+import plotly.plotly as py
+import plotly.graph_objs as go
+py.sign_in('sasawat17', 'l6zvgkrnkl')
+
+trace1 = go.Bar(x=['Personal computer', 'Notebook', 'Tablet', 'PDA', 'Smart phone'], \
+    y=[19277292, 11909771, 13239194, 1058050, 28640381], \
+    name='A sum of technology equipment in the year 2555-2560')
+data = [trace1]
+layout = go.Layout(barmode='group')
+
+fig = go.Figure(data=data, layout=layout)
+plot_url = py.plot(fig, filename='grouped-bar')
